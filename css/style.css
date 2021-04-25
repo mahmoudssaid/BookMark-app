@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.continent {
+    background-color: #Eeee;
+    padding: 50px;
+}
+
+label {
+    display: block;
+}
+
+.text-header {
+    font-weight: bold;
+    margin-bottom: 20px;
+    ;
+}
+
+.main-head {
+    padding: 40px 0;
+    border-bottom: 1px solid #999;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #aaa;
+}
+
+.footer {
+    border-top: 1px solid #999;
+    margin-top: 15px;
+    padding: 20px;
+    color: #AAA;
+}
+
+.footer p {
+    margin: 15px 0;
+}
+
+.itemSite {
+    background: linear-gradient(#EEE, #FFF);
+    padding: 20px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+.itemSite p {
+    width: 40%;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.itemSite span {
+    margin-right: 10px;
+}
+
+.alert {
+    display: none;
+    margin-top: 10px;
+}
+
+.form-check-input {
+    left: 203px;
+    margin-top: .5rem;
+}
+
+.form-control {
+    border: 0;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, blue, purple, blue, purple);
+    border-image-slice: 1;
+    border-radius: 3px;
+    transition: .04s;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.form-control:focus {
+    border: 2px solid;
+    border-image: linear-gradient(to right, blue, purple, blue, purple);
+    border-image-slice: 1;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.is-valid:focus {
+    box-shadow: none !important;
+}
+
+.notFound {
+    color: rgb(201, 57, 57);
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+}

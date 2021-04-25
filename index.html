@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <!--================== header ========================-->
+            <div class="main-head">
+                <h1>Bookmarker</h1>
+            </div>
+            <div class="continent my-3">
+                <h4 class="text-center text-header">Bookmark your favorite sites</h4>
+                <!--================== main section ========================-->
+                <div class="form-group">
+                    <label for="siteName" class=" text-center">Site Name</label>
+                    <input type="text" class="form-control" id="siteName" onkeyup="hideAlertUN(this.value)" placeholder="Bookmark Name">
+                    <div class="alert alert-danger" role="alert" id="alertUS"></div>
+                </div>
+                <div class="form-group">
+                    <label for="siteUrl" class=" text-center">Site URL</label>
+                    <input type="text" class="form-control " id="siteUrl" onkeyup="hideAlertUR(this.value)" placeholder="website URL">
+                    <div class="alert alert-danger" role="alert" id="alertUR"></div>
+                </div>
+                <button class="btn btn-primary m-auto d-block" onclick="addUrl()" id="submit">Submit</button>
+            </div>
+            <!--================== Search ========================-->
+            <div class="form-group col-6 m-auto my-5 text-center">
+                <input type="text" placeholder="place chose your search" class="form-control my-3" id="search">
+                <!--================== site or url ========================-->
+                <div class="form-check">
+                    <input class="form-check-input" name="siteOrUrl" type="radio" onclick="radioChick(this.value)" id="checkSite" value="site">
+                    <label class="form-check-label" for="checkSite">search by site name</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="siteOrUrl" type="radio" onclick="radioChick(this.value)" id="checkUrl" value="url">
+                    <label class="form-check-label" for="checkUrl">search by url</label>
+                </div>
+            </div>
+            <!--================== search result ========================-->
+            <div id="items">
+            </div>
+        </div>
+    </section>
+    <!--================== footer ========================-->
+    <footer>
+        <div class="container">
+            <div class="footer"></div>
+            <p>© 2019 Bookmarker Inc.</p>
+        </div>
+    </footer>
+    <script src="./js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
